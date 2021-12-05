@@ -26,9 +26,12 @@
     <remote name="sailfishos"
             fetch="https://github.com/sailfishos" />
 
+    <remote name="github" fetch="https://github.com/" />
+
     <default remote="aosp"
              sync-j="8"
              sync-c="true" />
+
 
     <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" remote="aosp" />
 
@@ -266,10 +269,10 @@
     <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" groups="qcom" remote="los" />
 
     <project path="halium/audioflingerglue" name="Halium/audioflingerglue" remote="hal" />
-    <project path="halium/devices" name="Halium/halium-devices" remote="hal" />
+    <project path="halium/devices" name="vbsampath/halium-devices" remote="github" revision="halium-7.1" />
     <project path="halium/droidmedia" name="droidmedia" remote="sailfishos" revision="refs/tags/0.20200424.0" />
     <project path="halium/halium-boot" name="Halium/halium-boot" remote="hal" revision="master" />
-    <project path="halium/hybris-boot" name="Halium/hybris-boot" remote="hal" revision="refs/heads/master" />
+    <project path="halium/hybris-boot" name="vbsampath/hybris-boot" remote="github" revision="cm-14.1-treltexx" />
     <project path="halium/libhybris" name="Halium/libhybris" remote="hal" revision="refs/heads/halium-7.1" />
     <project path="halium/platform-api" name="ubports/platform-api" remote="hal" revision="xenial"  />
 </manifest>
